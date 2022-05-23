@@ -19,7 +19,6 @@ use App\Http\Controllers\Auth\RegisterController;
 
 Route::get('/dash', [DashController::class, 'index'])->name('dash');
 
-
 Route::get('/login', [LoginController::class, 'index'])->name('login');
 Route::post('/login', [LoginController::class, 'store']);
 
