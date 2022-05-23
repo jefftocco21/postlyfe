@@ -14,6 +14,9 @@ use App\Http\Controllers\Auth\RegisterController;
 |
 */
 
+
+Route::get('/dash', [DashController::class, 'index'])->name('dash');
+
 Route::get('/posts', function () {
     return view('posts.index');
 });
