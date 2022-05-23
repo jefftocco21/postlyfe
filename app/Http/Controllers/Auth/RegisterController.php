@@ -27,6 +27,6 @@ class RegisterController extends Controller
 
         User::create($formFields);
 
-        return redirect()->with('message', 'User creation successful');
+        return redirect()->route('dash')->with('message', 'User creation successful');
     }
 }
